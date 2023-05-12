@@ -101,8 +101,7 @@ function Notes() {
             let bVal = key === "title" ? b[key] : new Date(b[key]);
             if ("ascending" === order) {
               return aVal < bVal ? 1 : -1;
-            }
-            if ("descending" === order) {
+            }else {
               return aVal > bVal ? 1 : -1;
             }
           })
